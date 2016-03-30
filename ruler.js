@@ -1,4 +1,4 @@
-console.log('ruler going...');
+// Add additional aspect ratios here, e.g. [w,h]
 var aspectRatios = [
   [5,8],
   [1,1],
@@ -9,7 +9,6 @@ var aspectRatios = [
   [3,1],
   [4,1]
 ];
-
 
 var board = document.createElement('div');
 var ruler = document.createElement('div');
@@ -40,14 +39,16 @@ function reCalc() {
   var x4 = Math.max(x1,x2);
   var y3 = Math.min(y1,y2);
   var y4 = Math.max(y1,y2);
+  
   var width = x4 - x3;
   var height = y4 - y3;
+  
   ruler.style.left = x3 + 'px';
   ruler.style.top = y3 + 'px';
   ruler.style.width = width + 'px';
   ruler.style.height = height + 'px';
-  var ar = nearest(width, height);
-  coord.innerHTML = ar + ' <span>(' +  width + ',' + height + ')</span>';
+  
+  coord.innerHTML = nearest(width, height) + ' <span>(' +  width + ',' + height + ')</span>';
 }
 board.onmousedown = function(e) {
   ruler.hidden = 0;
@@ -64,6 +65,6 @@ board.onmousemove = function(e) {
   }
 };
 board.onmouseup = function(e) {
-  //ruler.hidden = 1;
+  ruler.hidden = 1;
   track = false;
 };
