@@ -7,6 +7,7 @@ body {
 }
 #ar-select-board {
   position: fixed;
+  z-index:999999;
   right: 0;
   left: 0;
   top: 0;
