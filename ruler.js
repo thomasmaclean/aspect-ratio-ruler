@@ -1,6 +1,7 @@
 // Add additional aspect ratios here, e.g. [w,h]
 var aspectRatios = [
   [5,8],
+  [4,5],
   [1,1],
   [4,3],
   [5,3],
@@ -65,6 +66,6 @@ board.onmousemove = function(e) {
   }
 };
 board.onmouseup = function(e) {
-  ruler.hidden = 1;
+  // ruler.hidden = 1;
   track = false;
 };
