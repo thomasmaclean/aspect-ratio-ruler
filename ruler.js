@@ -1,4 +1,16 @@
 console.log('ruler going...');
+var aspectRatios = [
+  [5,8],
+  [1,1],
+  [4,3],
+  [5,3],
+  [16,9],
+  [2,1],
+  [3,1],
+  [4,1]
+];
+
+
 var board = document.createElement('div');
 var ruler = document.createElement('div');
 var coord = document.createElement('div');
@@ -14,9 +26,6 @@ document.body.appendChild(board);
 
 var x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 var track = false;
-var aspectRatios = [
-    [5,8], [1,1], [4,3], [5,3], [16,9], [2,1], [3,1], [4,1]
-  ];
 
 function nearest(w, h) {
   var targetRatio = w/h;
