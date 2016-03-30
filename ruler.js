@@ -52,8 +52,8 @@ function reCalc() {
 }
 board.onmousedown = function(e) {
   ruler.hidden = 0;
-  x1 = e.clientX;
-  y1 = e.clientY;
+  x1 = x2 = e.clientX;
+  y1 = y2 = e.clientY;
   reCalc();
   track = true;
 };
