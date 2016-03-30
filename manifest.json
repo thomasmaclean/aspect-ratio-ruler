@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Aspect Ratio Ruler",
+  "description": "This extension shows a select box ruler that shows the nearest aspect ratio to the current selection",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Click and then drag to see ratios"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

@@ -1,0 +1,32 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  height: 100%;
+}
+#ar-select-board {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+#ar-select {
+  z-index:999999;
+  border: 1px dotted #000;
+  position: fixed;
+  background: rgba(255,255,255,.5);
+}
+#ar-select-coord {
+  display: float;
+  background-color: gainsboro;
+  color: black;
+  padding: .1em;
+}
+#ar-select-coord span {
+  font-size: .65em;
+  color: black;
+}
