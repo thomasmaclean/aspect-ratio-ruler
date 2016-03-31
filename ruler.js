@@ -52,7 +52,7 @@ function reCalc() {
   coord.innerHTML = nearest(width, height) + ' <span>(' +  width + ',' + height + ')</span>';
 }
 board.onmousedown = function(e) {
-  ruler.hidden = 0;
+  ruler.hidden = 1;
   x1 = x2 = e.clientX;
   y1 = y2 = e.clientY;
   reCalc();
@@ -60,6 +60,7 @@ board.onmousedown = function(e) {
 };
 board.onmousemove = function(e) {
   if (track) {
+    ruler.hidden = 0;
     x2 = e.clientX;
     y2 = e.clientY;
     reCalc();
