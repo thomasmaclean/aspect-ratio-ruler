@@ -8,7 +8,6 @@
     "scripts": ["background.js"]
   },
   "browser_action": {
-    "default_icon": "icon.png",
     "default_title": "Click and then drag to see ratios"
   },
   "permissions": [
